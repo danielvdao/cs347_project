@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="94C7610E-A1B8-5D19-F1BE-4E19BC106E8D" name="NL_Document">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:27:10 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="doc_id" id="DE77BAA9-81B0-B658-57CC-511C397907DA">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:27:23 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_id" id="A638FC23-2FBB-322B-7B82-E95D8E0F7517">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:29:15 UTC</createdTime>
+<generatorID>6D9727B7-4842-CA80-AD41-5550079794E1</generatorID>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F1DB9A6E-22B2-13A5-58E3-1AA2D56A22FD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="filename" id="F88FE6D5-3855-A301-EB53-86BD84D7208F">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:31:01 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="file_mimetype" id="74138A31-E99C-8353-9379-4BFCCF151939">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:33:00 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_charset" id="420E8EBA-AE7A-155B-9472-40B929FADE9B">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:33:40 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_data" id="5A5861DD-6ADB-F03F-4FFD-0AA3FA9D2D57">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:33:53 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="file_comments" id="6871E447-F181-9E2A-E3A5-821C766017EF">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:34:05 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="tags" id="0916E2FA-600E-F456-AF71-D99444920ABC">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:35:47 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CD8543C9-CA61-CAEE-1447-FF8A0079A47F" name="{entity} PK">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:27:33 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="893A5091-913D-E7FD-19E4-309DCB330E61" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE77BAA9-81B0-B658-57CC-511C397907DA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2B24DCDA-E716-787A-2631-4A4BCD67F155" name="NL_Members">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:37:50 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_id" id="F1DB9A6E-22B2-13A5-58E3-1AA2D56A22FD">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:39:46 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="BAF3456B-9C1B-507F-AD5D-4939C0771AF8">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:39:57 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="name" id="35268775-487A-A24A-28A0-DA633F022ED1">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:41:18 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="employee_lab" id="6AA8BAE8-88AF-A827-91A9-B8EF36C05164">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:41:35 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="employee_division" id="D029DAB9-59B1-36CC-D335-F2B5884082E1">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:41:53 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="employee_status" id="C8CDCF9A-9ACF-F7F3-CF11-DC5BF743EC03">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:42:24 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="ownership_div_code" id="FEB4ADEB-0B71-F8AF-36A3-0F36DD43266E">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:43:58 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="list_description" id="3A98CAEB-1452-8E46-595D-3985C1379456">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:44:29 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3500</dataTypeSize>
+</Attribute>
+<Attribute name="external_view_name" id="703FB80A-2C69-7E72-230F-B58600F8B6BD">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:44:48 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="creation_date" id="85E60AB7-7817-658E-1527-110DBDAAFFFC">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:45:08 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="list_status" id="A74AB1C1-90C3-BAA6-BAF0-4DC7D766C3FD">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:45:20 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="status_eff_date" id="8CD0DAF6-C279-24B9-BFED-2CAF4841526D">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:45:41 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="date_added" id="EDDBBC7F-2E8F-2B66-5E4E-99BD4EA76FBA">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:47:17 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="admin" id="93F69C6B-BDD6-CB38-B0AC-C43C244BA16C">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-15 01:50:19 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4B9C9C16-0F5D-3D9C-2DBF-BC9A906C8378" name="{entity} PK">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-08 22:39:54 UTC</createdTime>
+<ownerDesignName>Project Logical Model</ownerDesignName>
+<engineerTo>
+<item key="0731DF29-B177-771A-45C4-65C7FFF3B543" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F1DB9A6E-22B2-13A5-58E3-1AA2D56A22FD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
