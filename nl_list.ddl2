@@ -1,0 +1,99 @@
+DROP SEQUENCE NL_Adminship_seq ; 
+create sequence NL_Adminship_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Adminship_PK_trig 
+; 
+
+create or replace trigger NL_Adminship_PK_trig 
+before insert on NL_Adminship
+for each row 
+begin 
+select NL_Adminship_seq.nextval into :new.adminship_id from dual; 
+end; 
+/
+
+DROP SEQUENCE NL_Documents_seq ; 
+create sequence NL_Documents_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Documents_PK_trig 
+; 
+
+create or replace trigger NL_Documents_PK_trig 
+before insert on NL_Documents
+for each row 
+begin 
+select NL_Documents_seq.nextval into :new.doc_id from dual; 
+end; 
+/
+
+DROP SEQUENCE NL_List_Member_seq ; 
+create sequence NL_List_Member_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_List_Member_PK_trig 
+; 
+
+create or replace trigger NL_List_Member_PK_trig 
+before insert on NL_List_Member
+for each row 
+begin 
+select NL_List_Member_seq.nextval into :new.NL_membership_id from dual; 
+end; 
+/
+
+DROP SEQUENCE NL_Member_seq ; 
+create sequence NL_Member_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Member_PK_trig 
+; 
+
+create or replace trigger NL_Member_PK_trig 
+before insert on NL_Member
+for each row 
+begin 
+select NL_Member_seq.nextval into :new.member_id from dual; 
+end; 
+/
+
+DROP SEQUENCE NL_Users_seq ; 
+create sequence NL_Users_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Users_PK_trig 
+; 
+
+create or replace trigger NL_Users_PK_trig 
+before insert on NL_Users
+for each row 
+begin 
+select NL_Users_seq.nextval into :new.user_id from dual; 
+end; 
+/
+
+DROP INDEX NL_Member_member_id_FK_0 ;
+CREATE INDEX NL_Member_member_id_FK_0 ON NL_Adminship(NL_Member_member_id) ;
+DROP INDEX NL_Users_user_id_FK_1 ;
+CREATE INDEX NL_Users_user_id_FK_1 ON NL_Adminship(NL_Users_user_id) ;
+DROP INDEX NL_Member_member_id_FK_2 ;
+CREATE INDEX NL_Member_member_id_FK_2 ON NL_Documents(NL_Member_member_id) ;
+DROP INDEX NL_Member_member_id_FK_3 ;
+CREATE INDEX NL_Member_member_id_FK_3 ON NL_List_Member(NL_Member_member_id) ;
+DROP INDEX NL_Member_member_id1_FK_4 ;
+CREATE INDEX NL_Member_member_id1_FK_4 ON NL_List_Member(NL_Member_member_id1) ;
+DROP INDEX NL_Users_user_id_FK_5 ;
+CREATE INDEX NL_Users_user_id_FK_5 ON NL_Member(NL_Users_user_id) ;
+DROP INDEX NL_Member_member_id_FK_6 ;
+CREATE INDEX NL_Member_member_id_FK_6 ON NL_Users(NL_Member_member_id) ;
