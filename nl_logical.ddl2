@@ -1,0 +1,23 @@
+DROP SEQUENCE NL_Members_seq ; 
+create sequence NL_Members_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Members_PK_trig 
+; 
+
+create or replace trigger NL_Members_PK_trig 
+before insert on NL_Members
+for each row 
+begin 
+select NL_Members_seq.nextval into :new.member_id from dual; 
+end; 
+/
+
+DROP INDEX NL_Members_member_id_FK_0 ;
+CREATE INDEX NL_Members_member_id_FK_0 ON NL_Members(NL_Members_member_id) ;
+DROP INDEX NL_Members_member_id_FK_1 ;
+CREATE INDEX NL_Members_member_id_FK_1 ON NL_Membership(NL_Members_member_id) ;
+DROP INDEX NL_Members_member_id2_FK_2 ;
+CREATE INDEX NL_Members_member_id2_FK_2 ON NL_Membership(NL_Members_member_id2) ;
