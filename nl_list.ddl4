@@ -2,8 +2,8 @@ drop view nl_employee ;
 drop view nl_list ;
 drop view nl_admin ; 
 
-create view nl_employee as
-SELECT user_id, name, admin, employee_lab, employee_division, employee_status, status_eff_date
+create view nl_employee as 
+SELECT USER_ID, EMPLOYEE_NAME, ADMIN, EMPLOYEE_LAB, EMPLOYEE_DIVISION, EMPLOYEE_STATUS, STATUS_EFF_DATE
 FROM nl_users ;
 
 create or replace TRIGGER nl_employee_trigger
@@ -11,28 +11,28 @@ create or replace TRIGGER nl_employee_trigger
      FOR EACH ROW
 BEGIN
      insert into nl_users(
-        user_id, 
-        name, 
-        admin, 
-        employee_lab, 
-        employee_division, 
-        employee_status, 
-        status_eff_date 
+        USER_ID, 
+        EMPLOYEE_NAME, 
+        ADMIN, 
+        EMPLOYEE_LAB, 
+        EMPLOYEE_DIVISION, 
+        EMPLOYEE_STATUS, 
+        STATUS_EFF_DATE 
         )
      VALUES (
-        :new.member_id, 
-        :new.name, 
-        "N", 
-        :new.employee_lab, 
-        :new.employee_division, 
-        :new.employee_status, 
-        :new.status_eff_date 
+        :new.USER_ID, 
+        :new.EMPLOYEE_NAME, 
+        'N', 
+        :new.EMPLOYEE_LAB, 
+        :new.EMPLOYEE_DIVISION, 
+        :new.EMPLOYEE_STATUS, 
+        :new.STATUS_EFF_DATE 
         );
 END;
 /
 
-create view nl_admin as
-SELECT member_id, name, admin, employee_lab, employee_division, employee_status, status_eff_date
+create view nl_admin as 
+SELECT USER_ID, EMPLOYEE_NAME, ADMIN, EMPLOYEE_LAB, EMPLOYEE_DIVISION, EMPLOYEE_STATUS, STATUS_EFF_DATE
 FROM nl_users
 WHERE ADMIN = 'Y' ;
 
@@ -41,59 +41,59 @@ create or replace TRIGGER nl_admin_trigger
      FOR EACH ROW
 BEGIN
      insert into nl_users(
-        member_id, 
-        name, 
-        admin, 
-        employee_lab, 
-        employee_division, 
-        employee_status, 
-        status_eff_date
+        USER_ID, 
+        EMPLOYEE_NAME, 
+        ADMIN, 
+        EMPLOYEE_LAB, 
+        EMPLOYEE_DIVISION, 
+        EMPLOYEE_STATUS, 
+        STATUS_EFF_DATE
         )
      VALUES (
-        :new.member_id, 
-        :new.name, 
-        "Y", 
-        :new.employee_lab, 
-        :new.employee_division, 
-        :new.employee_status, 
-        :new.status_eff_date 
+        :new.USER_ID, 
+        :new.EMPLOYEE_NAME, 
+        'Y', 
+        :new.EMPLOYEE_LAB, 
+        :new.EMPLOYEE_DIVISION, 
+        :new.EMPLOYEE_STATUS, 
+        :new.STATUS_EFF_DATE 
         );
 END;
 /
 
 
-create view nl_list as
-SELECT member_id, type, name, ownership_div_code, list_description, external_view_name, creation_date, list_status, status_eff_date, date_added
-FROM nl_members
+create view nl_list as 
+SELECT MEMBER_ID, TYPE, NAME, OWNERSHIP_DIV_CODE, LIST_DESCRIPTION, EXTERNAL_VIEW_NAME, CREATION_DATE, LIST_STATUS, STATUS_EFF_DATE, DATE_ADDED
+FROM nl_member
 WHERE TYPE = 'List' ;
 
 create or replace TRIGGER nl_list_trigger
      INSTEAD OF insert ON nl_list
      FOR EACH ROW
 BEGIN
-     insert into nl_members(
-        member_id,
-        type, 
-        name, 
-        ownership_div_code, 
-        list_description, 
-        external_view_name, 
-        creation_date, 
-        list_status, 
-        status_eff_date, 
-        date_added
+     insert into nl_member(
+        MEMBER_ID,
+        TYPE, 
+        NAME, 
+        OWNERSHIP_DIV_CODE, 
+        LIST_DESCRIPTION, 
+        EXTERNAL_VIEW_NAME, 
+        CREATION_DATE, 
+        LIST_STATUS, 
+        STATUS_EFF_DATE, 
+        DATE_ADDED
         )
      VALUES (
-        :new.member_id,
-        "List", 
-        :new.name, 
-        :new.ownership_div_code, 
-        :new.list_description, 
-        :new.external_view_name, 
-        :new.creation_date, 
-        :new.list_status, 
-        :new.status_eff_date, 
-        :new.date_added 
+        :new.MEMBER_ID,
+        'List', 
+        :new.NAME, 
+        :new.OWNERSHIP_DIV_CODE, 
+        :new.LIST_DESCRIPTION, 
+        :new.EXTERNAL_VIEW_NAME, 
+        :new.CREATION_DATE, 
+        :new.LIST_STATUS, 
+        :new.STATUS_EFF_DATE, 
+        :new.DATE_ADDED 
         );
 END;
 /
