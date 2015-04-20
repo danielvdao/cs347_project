@@ -1,6 +1,29 @@
-drop view nl_employee ;
 drop view nl_list ;
 drop view nl_admin ; 
+drop view nl_employee ; 
+drop view nl_member_employee ; 
+
+
+create view nl_member_employee as 
+SELECT MEMBER_ID, TYPE, NL_USERS_USER_ID
+FROM nl_member ;
+
+create or replace TRIGGER nl_member_employee_trigger
+     INSTEAD OF insert ON nl_member_employee
+     FOR EACH ROW
+BEGIN
+     insert into nl_member(
+        MEMBER_ID, 
+        TYPE, 
+        NL_USERS_USER_ID
+        )
+     VALUES (
+        :new.MEMBER_ID, 
+        'Employee', 
+        :new.NL_USERS_USER_ID
+        );
+END;
+/
 
 create view nl_employee as 
 SELECT USER_ID, EMPLOYEE_NAME, ADMIN, EMPLOYEE_LAB, EMPLOYEE_DIVISION, EMPLOYEE_STATUS, STATUS_EFF_DATE
