@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA9B6104-C9D3-F5B0-8220-699AEE46F573" name="NL_Users">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>4F5AB9CC-F323-EC1E-1CEB-D9134CD71147</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="F783D9A2-06DE-A424-F5E9-B7E366C0E331">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>28CB7E7C-CE3E-86B2-D2F0-159FF94E9DB6</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_name" id="2B7096FF-3041-9A29-D69B-C3BCB811D21E">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>0E177A27-89F1-FDAB-D5DD-D2904F9A920A</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_lab" id="59F2EA01-54AD-7792-569E-C83D097F846F">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>01BE4DB6-E685-AFA4-E69D-6625D5152651</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_division" id="EF6FC989-6A75-1A97-C787-A9A2A03F6017">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>0A41F1DA-39EE-4938-1327-BC131652BEA8</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_status" id="29491F5E-411B-587F-A08F-07FD2071A972">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>5C36F72C-4A5E-5BA3-D440-0EE735ACFBD7</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_eff_date" id="DFFF78A6-661C-6CB1-F6FA-B50D0EDCD741">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>86FB0396-E0D6-0B36-A47C-83B5CAE6EE5F</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="admin" id="F7419DD5-C2DF-DDF4-6789-C802B001037A">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>0AD61C1E-37F7-9659-6B9C-0569A901FE06</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_Member_member_id" id="DE1B22DE-34B6-D508-E927-9536D0985F3B">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>7A4A1F41-2E89-158B-629D-58BFBADF1C27</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B1355FE0-2C93-A43F-10C4-797C2EF8A0A6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFB0C2B5-59CE-1741-BA95-E16DC5A65F0B" referredColumn="B1355FE0-2C93-A43F-10C4-797C2EF8A0A6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF75E944-F52A-F66D-A1D1-285FC8A8836C" name="NL_Users_PK">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>964BB37F-8B57-AC2B-BD54-78B2B52C626E</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F783D9A2-06DE-A424-F5E9-B7E366C0E331"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9D13AE9-4D84-8C67-B18B-A811E57B559D" name="NL_Users__IDX">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CA99A398-DDFD-7E36-544A-777C593BA14B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DE1B22DE-34B6-D508-E927-9536D0985F3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B09D8182-7771-8270-EB04-D1D6EA41E90E" name="NL_Users_NL_Member_FK">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>CA99A398-DDFD-7E36-544A-777C593BA14B</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE1B22DE-34B6-D508-E927-9536D0985F3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

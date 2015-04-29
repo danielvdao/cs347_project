@@ -38,6 +38,46 @@ begin
 end; 
 /
 
+DROP SEQUENCE NL_Division_seq ; 
+create sequence NL_Division_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger NL_Division_PK_trig 
+before insert on NL_Division
+for each row 
+begin 
+select NL_Division_seq.nextval into :new.div_id from dual; 
+end; 
+/
+alter table NL_Division add created date ; 
+alter table NL_Division add created_by VARCHAR2 (255) ; 
+alter table NL_Division add row_version_number integer ; 
+alter table NL_Division add updated date ; 
+alter table NL_Division add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger NL_Division_AUD_trig 
+before insert or update on NL_Division 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
 DROP SEQUENCE NL_Documents_seq ; 
 create sequence NL_Documents_seq 
 start with 100 
@@ -60,6 +100,46 @@ alter table NL_Documents add updated_by VARCHAR2 (255) ;
 /
 create or replace trigger NL_Documents_AUD_trig 
 before insert or update on NL_Documents 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE NL_Lab_seq ; 
+create sequence NL_Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger NL_Lab_PK_trig 
+before insert on NL_Lab
+for each row 
+begin 
+select NL_Lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+alter table NL_Lab add created date ; 
+alter table NL_Lab add created_by VARCHAR2 (255) ; 
+alter table NL_Lab add row_version_number integer ; 
+alter table NL_Lab add updated date ; 
+alter table NL_Lab add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger NL_Lab_AUD_trig 
+before insert or update on NL_Lab 
 for each row 
 begin 
   if inserting then 
@@ -204,11 +284,13 @@ DROP INDEX NL_Users_user_id_FK_1 ;
 CREATE INDEX NL_Users_user_id_FK_1 ON NL_Adminship(NL_Users_user_id) ;
 DROP INDEX NL_Member_member_id_FK_2 ;
 CREATE INDEX NL_Member_member_id_FK_2 ON NL_Documents(NL_Member_member_id) ;
-DROP INDEX NL_Member_member_id_FK_3 ;
-CREATE INDEX NL_Member_member_id_FK_3 ON NL_List_Member(NL_Member_member_id) ;
-DROP INDEX NL_Member_member_id1_FK_4 ;
-CREATE INDEX NL_Member_member_id1_FK_4 ON NL_List_Member(NL_Member_member_id1) ;
-DROP INDEX NL_Users_user_id_FK_5 ;
-CREATE INDEX NL_Users_user_id_FK_5 ON NL_Member(NL_Users_user_id) ;
-DROP INDEX NL_Member_member_id_FK_6 ;
-CREATE INDEX NL_Member_member_id_FK_6 ON NL_Users(NL_Member_member_id) ;
+DROP INDEX NL_Division_div_id_FK_3 ;
+CREATE INDEX NL_Division_div_id_FK_3 ON NL_Lab(NL_Division_div_id) ;
+DROP INDEX NL_Member_member_id_FK_4 ;
+CREATE INDEX NL_Member_member_id_FK_4 ON NL_List_Member(NL_Member_member_id) ;
+DROP INDEX NL_Member_member_id1_FK_5 ;
+CREATE INDEX NL_Member_member_id1_FK_5 ON NL_List_Member(NL_Member_member_id1) ;
+DROP INDEX NL_Users_user_id_FK_6 ;
+CREATE INDEX NL_Users_user_id_FK_6 ON NL_Member(NL_Users_user_id) ;
+DROP INDEX NL_Member_member_id_FK_7 ;
+CREATE INDEX NL_Member_member_id_FK_7 ON NL_Users(NL_Member_member_id) ;

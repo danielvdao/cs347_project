@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="106DA618-02A7-6D35-0FEF-3DC583DFD2AC" name="NL_Division">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:01:08 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="div_id" id="D962A3C2-BDA8-4FF0-A0A8-14DA47843E84">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:01:17 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="div_code" id="F0316FCF-CE9C-1655-6615-CB09523BB0FF">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:01:28 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1D5BBC02-223F-33D5-C18A-0186E17393F4" name="{entity} PK">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:01:27 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D962A3C2-BDA8-4FF0-A0A8-14DA47843E84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

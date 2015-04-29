@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="new_project_logical_modern" id="170E5E10-C4E2-C171-8611-4E9A85BA0DCB" version="3.5">
-<createdBy>carlostrejo</createdBy>
-<createdTime>2015-04-15 22:35:29 UTC</createdTime>
-<ownerDesignName>new_project_logical_modern</ownerDesignName>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="NL_Logical" id="3DD0E089-2D31-25A0-42FC-4020383AE825" version="3.5">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 21:31:41 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
 <capitalNames>false</capitalNames>
-<designId>170E5E10-C4E2-C171-8611-4E9A85BA0DCB</designId>
+<designId>3DD0E089-2D31-25A0-42FC-4020383AE825</designId>
 </OSDM_Design>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0FDEE1A6-FD91-1323-A746-35F9F768C4A1" name="NL_Adminship">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 21:50:50 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="adminship_id" id="15482BB8-645D-C1EE-3B35-11EA9DE51304">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 21:51:04 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="NL_users_user_id" id="AE450E66-219B-497F-AE60-D93D5A822D29">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 21:55:35 UTC</createdTime>
+<generatorID>60226D88-D2BE-55B5-C555-EBFECE546801</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>28CB7E7C-CE3E-86B2-D2F0-159FF94E9DB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="NL_member_member_id" id="88ED4FE0-ECB6-E54C-4E9B-9DFA632D7327">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 21:55:47 UTC</createdTime>
+<generatorID>82A3EB5D-8570-3349-B9A2-2230111FBE0C</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7E8E2020-B064-C03F-D909-CA347B30783E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AA81A474-B150-9CEA-B155-8768DCCEFDDF" name="{entity} PK">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 21:51:20 UTC</createdTime>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<engineerTo>
+<item key="F6B93FAC-B1DF-A7A3-9B3C-3FE00C05E443" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>15482BB8-645D-C1EE-3B35-11EA9DE51304</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A61D0750-3012-F911-F3B3-CCA64042EAE8" name="NL_List_Member">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>3B1534D2-B0EE-7047-73D8-711E3A0D7299</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NL_membership_id" id="1EA218FE-6A78-502D-111D-DF3C7DCA10D7">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>B37758A9-555D-87E4-BAD4-2B69B08B93B8</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_Member_member_id" id="6376AEE0-B8DA-D99B-D110-F4E9F50E7381">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>5DE1C8DC-3F79-C7DB-8EB4-C658900B5953</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B1355FE0-2C93-A43F-10C4-797C2EF8A0A6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E030321-2A5F-D17B-3F7C-057ACB81B286" referredColumn="B1355FE0-2C93-A43F-10C4-797C2EF8A0A6"/>
+</associations>
+</Column>
+<Column name="NL_Member_member_id1" id="E2CCBA4B-9785-8999-8036-9905A05BA031">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>AF9951A4-EF54-30C2-449E-31CF7AE10B61</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B1355FE0-2C93-A43F-10C4-797C2EF8A0A6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9622958-26BF-DC7F-F4FB-E4070A8F7CE2" referredColumn="B1355FE0-2C93-A43F-10C4-797C2EF8A0A6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9351306-3795-3340-029F-3190CDF38A40" name="NL_List_Member_PK">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>2CE90DAD-8F80-1BEB-4C8A-C5F60FC58F4C</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EA218FE-6A78-502D-111D-DF3C7DCA10D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79A16805-1BA9-07F9-6BF6-B5D6FD0A2787" name="NL_List_Member_NL_Member_FK">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>911779F7-F39C-3808-CF11-A78B012E6127</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6376AEE0-B8DA-D99B-D110-F4E9F50E7381"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C7B2423-D7D0-1023-199B-BD1E5AE79A18" name="NL_List_Member_NL_Member_FKv1">
+<createdBy>Novelty</createdBy>
+<createdTime>2015-04-24 22:12:32 UTC</createdTime>
+<generatorID>9602D065-BB67-BF86-1972-3A17ACBB16BF</generatorID>
+<ownerDesignName>NL_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2CCBA4B-9785-8999-8036-9905A05BA031"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
